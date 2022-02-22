@@ -112,7 +112,7 @@
         display: block !important;
         visibility: visible !important;
         transition: all 0.3s ease;
-        
+        background-color:#fff;
     }
     
     .navbar-switch-toggler.open{
@@ -185,11 +185,12 @@
         display: block !important;
         visibility: visible !important;
         transition: all 0.3s ease;
+        background-color:#fff;
         
     }
     
     .navbar-switch-toggler.open{
-        left: 50%;
+        left: 70%;
     }
 
     .left-section{
@@ -204,7 +205,7 @@
 
     .left-section.open{
         position: fixed;
-        width:50%;
+        width:70%;
         height:100vh;
         visibility: visible;
         display: block;
