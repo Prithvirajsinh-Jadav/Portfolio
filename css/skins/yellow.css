@@ -1,0 +1,29 @@
+:root{
+    --primary-color:#ffb400;
+}
+
+.nav li a:hover,.nav li a.active{
+    color: var(--primary-color);
+}
+
+.contact-section button,
+.social-link a{
+    background-color: var(--primary-color);
+}
+
+.service-section .card:hover,
+.section-title h1::after{
+    background-color: var(--primary-color);
+}
+
+.portfolio-container i,
+.carousel-control a span,
+.contact-container span,
+.service-section .card span,
+.about-text h3 span{
+    color: var(--primary-color) ;
+
+}
+
+
+

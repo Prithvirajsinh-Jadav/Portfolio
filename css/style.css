@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+
+:root {
+   --heading-color:#302e4d;
+   --montserrat-font:'Monsterrat',sans-serif;
+   --rubik-font:'Rubik',sans-serif;
+   --border-right : #e8dfec;
+   --para-color: #504e70;
+   --white-color: #ffffff;
+   --light-blue:#f2f2fc;
+
+}
+  
+
+/* ----------------------- 
+        Global CSS 
+--------------------------*/
+
+*,*::after,*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+    
+:active,:hover,:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+    
+a,a:hover{
+    text-decoration: none;
+}
+
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+    
+html{
+    scroll-behavior: smooth;
+}
+
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.left-section {
+    background-color:#fdf9ff;
+    /* background-color: red; */
+    z-index: 99;
+    border-right: 1px solid var(--border-right);
+    /* min-height: 100vh; */
+    width: 25%;
+
+}
+.main-container {
+    min-height: 100vh;
+}
+.right-section {
+    background-color: var(--light-blue);
+    width:75%;
+    /* min-height: 100vh; */
+}
+  
+/* Hidden */
+.hidden {
+    display: none !important;
+}
+
+/* ---------------------------------------------- 
+            Styling Left Section 
+-------------------------------------------------*/
+
+
+.left-content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* margin:auto; */
+    width: inherit;
+    height: 90vh;
+    margin: 5vh 0 5vh 0;
+
+    /* justify-content: space-between; */
+}
+
+/* ---------- Styling profile image --------------- */
+
+.img-class {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.profile-img{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    text-align: center;
+    border:8px solid #ffffff;
+
+}
+
+/* ---------- Styling Logo --------------- */
+
+.logo {
+    padding:3rem 0;
+}
+
+.logo a{
+    font-size: 3rem;
+    /* background-color: lightcoral; */
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: var(--heading-color);
+    font-family: var(--rubik-font) !important;
+    font-weight:700;
+    /* font-family: 'Monsterrat',sans-serif; */
+    
+}
+
+/* ---------- Styling Navigation --------------- */
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+
+}
+
+
+.nav li{
+    border-bottom: 1px solid var(--border-right);
+
+}
+
+.nav li a{
+    font-weight:600;
+    font-size: 1.25rem;
+    color:var(--heading-color);
+    line-height:3rem;
+    transition: all 0.3s ease;
+}
+
+.nav li a:not(.active):hover{
+    padding-left: 0.5rem;
+}
+
+.nav li a .fa{
+    margin-right: .5rem;
+}
+
+/* ---------- Styling Copyright --------------- */
+
+.copyright-text{
+    text-align: center;
+    position:absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* ---------------------------------------------- 
+            Styling Right Section 
+-------------------------------------------------*/
+
+
+/* ---------- Home Section --------------- */
+
+.home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    min-height: 100vh;
+    /* border: 8px solid blue; */
+    padding:0;
+    margin:0;
+    outline: 0;
+}
+
+.home-content{
+    display: flex;
+    /* align-self:center; */
+    text-align: center;
+    flex-direction: column;
+}
+
+.home-content img{
+    display: block;
+    margin: 0 auto;
+}
+
+.home-content h1{
+    color: var(--heading-color);
+    font-weight:700;
+    font-family: var(--rubik-font);
+}
+
+.home-content p{
+    font-weight: 500;
+    line-height:1.5rem;
+    color:var(--para-color);
+    font-size: 1rem;
+}
+
+.social-link a{
+    height:2rem;
+    width:2rem;
+    display: inline-block;
+    /* background-color: yellow; */
+    text-align: center;
+    line-height: 2rem;
+    color:var(--white-color);
+    border-radius:50%;
+    margin:0 .5rem;
+    transition:all .3s ease;
+}
+
+.social-link a:hover{
+    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+/* ----------  Home Section End --------------- */
+
+.section-title h1{
+    color: var(--header-color); 
+    position: relative;
+    margin: .5rem 0 0 0;
+}
+
+.section-title h1::after{
+    content: '';
+    left: 50%;
+    bottom: -.5rem;
+    height: 4px;
+    width: 50px;
+    position:absolute;
+    transform: translatex(-50%);
+}
+
+
+/* -------------- About Section --------------- */
+.about-section{
+    min-height: 100vh;
+    
+}
+
+.about-section .container:nth-child(2){
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 90vh; */
+}
+
+
+
+.about-process{
+    width:20%;
+}
+
+.about-content img{
+    margin:1.5rem 0;
+}
+
+/* ------------- About Section End ------------- */
+
+/* -------------- Service Section --------------- */
+
+.service-section{
+    min-height: 100vh;
+}
+
+.service-section .container{
+    padding: 1.5em;
+}
+
+
+
+.service-section .card{
+    padding:0 1rem;
+    background-color:#fdfdff;
+    border-radius:10px;
+    transition:all .3s ease;
+    height: 100%;
+}
+
+.services-container .col-4{
+    margin-bottom: 2rem;
+
+}
+
+.service-section .card span{
+    /* background-color:red; */
+    display:block;
+    margin:0 auto;
+}
+
+.service-section .card:hover{
+    transform: scale(1.05);
+}
+.service-section .card:hover span{
+    color: #f2f2fc;
+}
+
+.services-container .row{
+    margin-bottom:2rem;
+}
+/* ------------ Service Section End ------------- */
+
+/* ------------ Contact Section Start ------------- */
+
+
+.contact-container{
+    /* background-color:red; */
+    text-align:center;
+}
+
+.contact-section .container:nth-child(2){
+    /* margin:0 5rem 0 0; */
+    margin-top: 2rem;
+}
+
+
+
+.form-item{
+    display: block;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contact-section form input{
+    background:var(--white-color);
+    margin:1rem 0 2rem 0;
+    border-radius: 25px;
+    line-height: 2rem;
+    padding: .25rem 1rem;
+    font-family: var(--montserrat-font);
+}
+
+.contact-section form textarea{
+    background:var(--white-color);
+    margin:1rem 0 2rem 0;
+    border-radius: 25px;
+    height:15vh;
+}
+
+.contact-section button{
+    border-radius: 25px;
+    color:var(--white-color);
+}
+
+.contact-inner-container{
+    width:100%;
+}
+
+.contact-number-container { 
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+/* ------------ Contact Section End ------------- */
+
+
+/* ------------ Testimonial Section Start ------------- */
+
+.carousel-text-container{
+    margin: 0 2rem;
+
+} 
+
+.carousel-item{
+    padding:0 10%;
+    color:var(--heading-color);
+}
+
+.carousel-content{
+    justify-self: center;
+    align-items: center;
+}
+.carousel-img-container{
+    margin: 5rem 0;
+   
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.carousel-img-container{
+   margin: 5rem 2rem;
+
+}
+
+#carouselExampleIndicators{
+    /* display:flex; */
+    margin: 4rem 0 0 0 ;
+}
+/* ------------ Testimonial Section End ------------- */
+
+
+/* ------------ Portfolio Section Start ------------- */
+
+.portfolio-section .card{
+    margin:0 1rem 2rem 1rem;
+    border: none;
+    transition: all .5s ease;
+}
+.portfolio-section .card:hover{
+    transform: scale(1.05);
+}
+.portfolio-section .container:nth-child(2){
+    margin: 5rem 0 0 0;
+}
+
+.portfolio-section .card-img-overlay{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-img{
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.portfolio-container p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 0.25rem;
+    right: 0;
+}
+
+.portfolio-section .card:hover .card-img-overlay{
+    opacity: 1;
+    color: white;
+    background-color: rgba(0, 0,0, 0.8);
+}
+
+
+/* ------------ Portfolio Section End ------------- */
+
+
+
+/* 
+.home-section,
+.service-section,
+.portfolio-section,
+.testimonials,
+.contact-section{
+    display: none;
+} */
+
+.section{
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* height:0px; */
+    left:25%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    min-height: 100vh;
+    /* height:100%; */
+    animation: slideSection 1s ease;
+    -webkit-animation: slideSection 1s ease;
+}
+
+/* @-webkit-keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+
+    }
+    100%{
+        transform: translateX(50%);
+    }
+} */
+
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
